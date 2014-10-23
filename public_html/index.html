@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>Hello Angular js</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="MainCtrl as ctrl">
+        {{ctrl.message}} AngularJS.
+        
+        <button ng-click="ctrl.changeMessage()">Change Message</button>
+        
+        <!-- angular resources -->
+        <script src="js/libs/angular.js/angular.js"></script>
+        <script src="js/notesModule.js"></script>
+        
+    </body>
+</html>

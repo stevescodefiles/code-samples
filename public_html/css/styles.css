@@ -1,0 +1,27 @@
+/*
+Created by Steve Guinn 
+Add meaningful comment here relating to the function of this file
+*/
+/* 
+    Created on : 18-Oct-2014, 16:15:39
+    Author     : steve
+*/
+.done {
+    background-color: green;
+}
+
+.pending {
+    background-color: red;
+}
+
+.panel, .panel2 {
+    width: 30%;
+    background-color: chartreuse;
+    padding: 3px;
+    margin-bottom: 8px;
+}
+
+.panel2 {
+    background-color: #ffcc33;
+}
+

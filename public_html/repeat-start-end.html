@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>ng-repeat-start and ng-repeat-end</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body ng-controller="MainCtrl as ctrl">
+        
+        <table border="1">
+            <tr ng-repeat-start="note in ctrl.notes">
+                <td>{{note.label}}</td>
+            </tr>
+            <tr ng-repeat-end>
+                <td>Done: {{note.done}}</td>
+            </tr>
+        </table>
+        
+        <!-- angular resources -->
+        <script src="js/libs/angular.js/angular.js"></script>
+        <script src="js/repeat-start-end.js"></script>
+        
+    </body>
+</html>

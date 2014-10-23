@@ -1,0 +1,168 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'karma-jasmine',
+1 verbose cli   'karm-chrome-launcher' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'karma-jasmine', null ]
+6 verbose cache add name=undefined spec="karma-jasmine" args=["karma-jasmine",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'karma-jasmine',
+7 verbose parsed url   path: 'karma-jasmine',
+7 verbose parsed url   href: 'karma-jasmine' }
+8 verbose cache add [ 'karm-chrome-launcher', null ]
+9 verbose cache add name=undefined spec="karm-chrome-launcher" args=["karm-chrome-launcher",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'karm-chrome-launcher',
+10 verbose parsed url   path: 'karm-chrome-launcher',
+10 verbose parsed url   href: 'karm-chrome-launcher' }
+11 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+12 verbose lock karma-jasmine C:\Users\steve\AppData\Roaming\npm-cache\df56d5e8-karma-jasmine.lock
+13 silly lockFile 6ac22f60-karm-chrome-launcher karm-chrome-launcher
+14 verbose lock karm-chrome-launcher C:\Users\steve\AppData\Roaming\npm-cache\6ac22f60-karm-chrome-launcher.lock
+15 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+16 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+17 silly lockFile 6ac22f60-karm-chrome-launcher karm-chrome-launcher
+18 silly lockFile 6ac22f60-karm-chrome-launcher karm-chrome-launcher
+19 verbose addNamed [ 'karma-jasmine', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile a9316641-karma-jasmine karma-jasmine@
+22 verbose lock karma-jasmine@ C:\Users\steve\AppData\Roaming\npm-cache\a9316641-karma-jasmine.lock
+23 verbose addNamed [ 'karm-chrome-launcher', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 4ddbf9f4-karm-chrome-launcher karm-chrome-launcher@
+26 verbose lock karm-chrome-launcher@ C:\Users\steve\AppData\Roaming\npm-cache\4ddbf9f4-karm-chrome-launcher.lock
+27 silly addNameRange { name: 'karma-jasmine', range: '*', hasData: false }
+28 verbose request where is /karma-jasmine
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id 978687d5ef7b9bcc
+31 verbose url raw /karma-jasmine
+32 verbose url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
+33 verbose url resolved https://registry.npmjs.org/karma-jasmine
+34 verbose request where is https://registry.npmjs.org/karma-jasmine
+35 info trying registry request attempt 1 at 21:03:46
+36 http GET https://registry.npmjs.org/karma-jasmine
+37 silly addNameRange { name: 'karm-chrome-launcher', range: '*', hasData: false }
+38 verbose request where is /karm-chrome-launcher
+39 verbose request registry https://registry.npmjs.org/
+40 verbose url raw /karm-chrome-launcher
+41 verbose url resolving [ 'https://registry.npmjs.org/', './karm-chrome-launcher' ]
+42 verbose url resolved https://registry.npmjs.org/karm-chrome-launcher
+43 verbose request where is https://registry.npmjs.org/karm-chrome-launcher
+44 info trying registry request attempt 1 at 21:03:46
+45 http GET https://registry.npmjs.org/karm-chrome-launcher
+46 http 200 https://registry.npmjs.org/karma-jasmine
+47 silly registry.get cb [ 200,
+47 silly registry.get   { date: 'Mon, 20 Oct 2014 20:03:30 GMT',
+47 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+47 silly registry.get     etag: '"1JFKKFO99KRQ073BP173CHGIT"',
+47 silly registry.get     'content-type': 'application/json',
+47 silly registry.get     'cache-control': 'max-age=60',
+47 silly registry.get     'content-length': '17003',
+47 silly registry.get     'accept-ranges': 'bytes',
+47 silly registry.get     via: '1.1 varnish',
+47 silly registry.get     age: '23',
+47 silly registry.get     'x-served-by': 'cache-ams4127-AMS',
+47 silly registry.get     'x-cache': 'HIT',
+47 silly registry.get     'x-cache-hits': '2',
+47 silly registry.get     'x-timer': 'S1413835410.458557,VS0,VE0',
+47 silly registry.get     vary: 'Accept',
+47 silly registry.get     'keep-alive': 'timeout=10, max=50',
+47 silly registry.get     connection: 'Keep-Alive' } ]
+48 silly addNameRange number 2 { name: 'karma-jasmine', range: '*', hasData: true }
+49 silly addNameRange versions [ 'karma-jasmine',
+49 silly addNameRange   [ '0.0.1',
+49 silly addNameRange     '0.0.2',
+49 silly addNameRange     '0.0.3',
+49 silly addNameRange     '0.1.0',
+49 silly addNameRange     '0.1.1',
+49 silly addNameRange     '0.1.2',
+49 silly addNameRange     '0.1.3',
+49 silly addNameRange     '0.1.4',
+49 silly addNameRange     '0.1.5',
+49 silly addNameRange     '0.2.0',
+49 silly addNameRange     '0.2.1',
+49 silly addNameRange     '0.2.2' ] ]
+50 verbose addNamed [ 'karma-jasmine', '0.1.5' ]
+51 verbose addNamed [ '0.1.5', '0.1.5' ]
+52 silly lockFile 46898725-karma-jasmine-0-1-5 karma-jasmine@0.1.5
+53 verbose lock karma-jasmine@0.1.5 C:\Users\steve\AppData\Roaming\npm-cache\46898725-karma-jasmine-0-1-5.lock
+54 silly lockFile cf8824d5--jasmine-karma-jasmine-0-1-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+55 verbose lock https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz C:\Users\steve\AppData\Roaming\npm-cache\cf8824d5--jasmine-karma-jasmine-0-1-5-tgz.lock
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz',
+56 verbose addRemoteTarball   '924c02ddb5d93737eb82832cffd5d75186d34a26' ]
+57 info retry fetch attempt 1 at 21:03:47
+58 verbose fetch to= C:\Users\steve\AppData\Local\Temp\npm-6364-xSiUfVj2\registry.npmjs.org\karma-jasmine\-\karma-jasmine-0.1.5.tgz
+59 http GET https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+60 http 404 https://registry.npmjs.org/karm-chrome-launcher
+61 verbose headers { date: 'Mon, 20 Oct 2014 20:03:30 GMT',
+61 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+61 verbose headers   'content-type': 'application/json',
+61 verbose headers   'cache-control': 'max-age=0',
+61 verbose headers   'content-length': '52',
+61 verbose headers   'accept-ranges': 'bytes',
+61 verbose headers   via: '1.1 varnish',
+61 verbose headers   age: '0',
+61 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+61 verbose headers   'x-cache': 'MISS',
+61 verbose headers   'x-cache-hits': '0',
+61 verbose headers   'x-timer': 'S1413835410.467599,VS0,VE176',
+61 verbose headers   'keep-alive': 'timeout=10, max=50',
+61 verbose headers   connection: 'Keep-Alive' }
+62 silly registry.get cb [ 404,
+62 silly registry.get   { date: 'Mon, 20 Oct 2014 20:03:30 GMT',
+62 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+62 silly registry.get     'content-type': 'application/json',
+62 silly registry.get     'cache-control': 'max-age=0',
+62 silly registry.get     'content-length': '52',
+62 silly registry.get     'accept-ranges': 'bytes',
+62 silly registry.get     via: '1.1 varnish',
+62 silly registry.get     age: '0',
+62 silly registry.get     'x-served-by': 'cache-ams4121-AMS',
+62 silly registry.get     'x-cache': 'MISS',
+62 silly registry.get     'x-cache-hits': '0',
+62 silly registry.get     'x-timer': 'S1413835410.467599,VS0,VE176',
+62 silly registry.get     'keep-alive': 'timeout=10, max=50',
+62 silly registry.get     connection: 'Keep-Alive' } ]
+63 silly lockFile 4ddbf9f4-karm-chrome-launcher karm-chrome-launcher@
+64 silly lockFile 4ddbf9f4-karm-chrome-launcher karm-chrome-launcher@
+65 http 200 https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+66 silly lockFile cf8824d5--jasmine-karma-jasmine-0-1-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+67 silly lockFile cf8824d5--jasmine-karma-jasmine-0-1-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+68 silly lockFile 46898725-karma-jasmine-0-1-5 karma-jasmine@0.1.5
+69 silly lockFile 46898725-karma-jasmine-0-1-5 karma-jasmine@0.1.5
+70 silly lockFile a9316641-karma-jasmine karma-jasmine@
+71 silly lockFile a9316641-karma-jasmine karma-jasmine@
+72 error 404 404 Not Found: karm-chrome-launcher
+72 error 404
+72 error 404 'karm-chrome-launcher' is not in the npm registry.
+72 error 404 You should bug the author to publish it
+72 error 404
+72 error 404 Note that you can also install from a
+72 error 404 tarball, folder, or http url, or git url.
+73 error System Windows_NT 6.2.9200
+74 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "karma-jasmine" "karm-chrome-launcher"
+75 error cwd C:\wamp\www\AngularUpAndRunning\public_html
+76 error node -v v0.10.32
+77 error npm -v 1.4.28
+78 error code E404
+79 verbose exit [ 1, true ]

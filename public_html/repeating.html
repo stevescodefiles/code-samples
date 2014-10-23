@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>ng-repeat over an object Notes App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body ng-controller="MainCtrl as ctrl">
+        
+        <div ng-repeat="note in ctrl.notes" class="panel">
+            <div>First Element: {{$first}}</div>
+            <div>Middle Element: {{$middle}}</div>
+            <div>Last Element: {{$last}}</div>
+            <div>Index of Element: {{$index}}</div>
+            <div>At Even Position: {{$even}}</div>
+            <div>At Odd Position: {{$odd}}</div>
+            
+            <span class="label">{{note.label}}</span>
+            <span class="status" ng-bind="note.done"></span>
+        </div>
+        
+        <div ng-repeat="note in ctrl.oldnotes" class="panel2">
+            <div>First Element: {{$first}}</div>
+            <div>Middle Element: {{$middle}}</div>
+            <div>Last Element: {{$last}}</div>
+            <div>Index of Element: {{$index}}</div>
+            
+            <span class="label">{{note.label}}</span>
+            <span class="status" ng-bind="note.done"></span>
+        </div>
+        
+        <!-- angular resources -->
+        <script src="js/libs/angular.js/angular.js"></script>
+        <script src="js/repeatoverobject.js"></script>
+        
+    </body>
+</html>
