@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>Notes App - Form Validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="MainCtrl as ctrl">
+        
+        <form ng-submit="ctrl.submit()" name="myForm">
+            <input type="text"
+                   ng-model="ctrl.user.username"
+                   required
+                   ng-minlength="4"/>
+            
+            <input type="password" 
+                   ng-model="ctrl.user.password" 
+                   required />
+            
+            <input type="submit" 
+                   value="Submit"
+                   ng-disabled="myForm.$invalid"/>
+        </form>
+        
+       
+        <!-- angular resources -->
+        <script src="../js/libs/angular.js/angular.js"></script>
+        <script src="js/forms5.js"></script>
+        
+    </body>
+</html>

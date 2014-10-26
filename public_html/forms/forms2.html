@@ -2,13 +2,13 @@
 
 <html ng-app="notesApp">
     <head>
-        <title>Working with forms</title>
+        <title>Notes App</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body ng-controller="MainCtrl as ctrl">
 
-        <input ng-model="ctrl.username" type="email"/>
+        <input ng-model="ctrl.username" type="text"/>
         <input ng-model="ctrl.password" type="password"/>
         
         <button ng-click="ctrl.change()">Change Values</button>
@@ -16,7 +16,7 @@
         
         <!-- angular resources -->
         <script src="../js/libs/angular.js/angular.js"></script>
-        <script src="js/forms1.js"></script>
+        <script src="js/forms2.js"></script>
         
     </body>
 </html>

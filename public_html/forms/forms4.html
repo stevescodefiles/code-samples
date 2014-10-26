@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>Notes App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="MainCtrl as ctrl">
+        
+        <h2>First Form </h2>
+        
+        <form ng-submit="ctrl.submit1()">
+            <input ng-model="ctrl.username" type="text"/>
+            <input ng-model="ctrl.password" type="password"/>
+            <input type="submit" value="Submit" />
+        </form>
+        
+        <h2>Second Form </h2>
+        
+        <form ng-submit="ctrl.submit2()">
+            <input ng-model="ctrl.user.username" type="text"/>
+            <input ng-model="ctrl.user.password" type="password"/>
+            <input type="submit" value="Submit" />
+        </form>
+        <!-- angular resources -->
+        <script src="../js/libs/angular.js/angular.js"></script>
+        <script src="js/forms4.js"></script>
+        
+    </body>
+</html>
