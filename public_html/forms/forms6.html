@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>Notes App - Error Handling</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="MainCtrl as ctrl">
+        
+        <form ng-submit="ctrl.submit()" name="myForm">
+            <input type="text"
+                   name="uname"
+                   ng-model="ctrl.user.username"
+                   required
+                   ng-minlength="4"/>
+            <span ng-show="myForm.uname.$error.required">
+                This is a required field
+            </span>
+            
+            <span ng-show="myForm.uname.$error.minlength">
+                This field is invalid
+            </span>
+            
+            <input type="password"
+                   name="pwd"
+                   ng-model="ctrl.user.password" 
+                   required />
+            <span ng-show="myForm.pwd.$error.required">
+                This is a required field
+            </span>
+            
+            <input type="submit" 
+                  value="Submit"
+                   ng-disabled="myForm.$invalid"/>
+        </form>
+        
+       
+        <!-- angular resources -->
+        <script src="../js/libs/angular.js/angular.js"></script>
+        <script src="js/forms6.js"></script>
+        
+    </body>
+</html>
