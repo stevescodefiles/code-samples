@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html ng-app="notesApp">
+    <head>
+        <title>Notes App - Nesting Forms with ng-form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .username.ng-valid {
+                background-color: green;
+                color:#fff;
+                border: 1px solid orange;
+            }
+            .username.ng-dirty.ng-invalid-required{
+                background-color: red;
+                color: #fff;
+            }
+            .username.ng-invalid-minlength{
+                background-color: lightpink;
+            }
+        </style>
+    </head>
+    <body>
+        
+      <form novalidate name="myForm">
+    <div>
+      <input type="text"
+             class="username"
+             name="uname"
+             ng-model="ctrl.user.username"
+             required=""
+             placeholder="Username"
+             ng-minlength="4" />
+      <input type="password"
+             class="password"
+             name="pwd"
+             ng-model="ctrl.user.password"
+             placeholder="Password"
+             required="" />
+    </div>
+
+    <ng-form name="profile">
+      <input type="text"
+             name="firstName"
+             ng-model="ctrl.user.profile.firstName"
+             placeholder="First Name"
+             required>
+      <input type="text"
+             name="middleName"
+             placeholder="Middle Name"
+             ng-model="ctrl.user.profile.middleName">
+      <input type="text"
+             name="lastName"
+             placeholder="Last Name"
+             ng-model="ctrl.user.profile.lastName"
+             required>
+      <input type="date"
+             name="dob"
+             placeholder="Date Of Birth"
+             ng-model="ctrl.user.profile.dob">
+    </ng-form>
+
+    <span ng-show="myForm.profile.$invalid">
+      Please fill out the profile information
+    </span>
+
+    <input type="submit"
+           value="Submit"
+           ng-disabled="myForm.$invalid"/>
+  </form>
+        
+       
+        <!-- angular resources -->
+        <script src="../js/libs/angular.js/angular.js"></script>
+        <script src="js/forms6.js"></script>
+        
+    </body>
+</html>
