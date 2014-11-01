@@ -8,9 +8,12 @@ angular.module('notesApp', [])
     .controller('MainCtrl', [function(){
         var self = this;
         
-        self.submit = function() {
-            console.log( 'Form fields valid, submit handled/ ', self.user);
-        };
+        self.sports = [
+            {label: 'Basketball', selected: 'YES'},
+            {label: 'Cricket', selected: 'NO'},
+            {label: 'Football', selected: 'NO'},
+            {label: 'Swimming', selected: 'YES'},
+        ]
         
 }]);
 
