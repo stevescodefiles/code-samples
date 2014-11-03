@@ -2,27 +2,31 @@
 
 <html ng-app="notesApp">
     <head>
-        <title>Notes App- using checkboxes</title>
+        <title>AngularJS and textareas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body ng-controller="MainCtrl as ctrl">
         <div>
-            <select ng-model="ctrl.selectedCountryId"
-                    ng-options="c.id as c.label for c in ctrl.countries">
-            </select>
-            Selected Country ID : {{ctrl.selectedCountryId}}
+            <form name="textFrm">
+            <textarea name="message"
+                      maxlength="50"
+                      ng-maxlength="50"
+                      ng-trim="true"
+                      ng-pattern="/^[a-zA-Z0-9 ]*$/"
+                      rows="4"
+                      cols="40"
+                      ng-model="ctrl.message"></textarea>
+            </form>
         </div>
         
         <div>
-            <select ng-model="ctrl.selectedCountry"
-                    ng-options="c.label for c in ctrl.countries">
-            </select>
-            Selected Country : {{ctrl.selectedCountry}}
+            Characters Remaining : {{50 - ctrl.message.length}}
+        </div>
         
         <!-- angular resources -->
         <script src="../js/libs/angular.js/angular.js"></script>
-        <script src="js/formselects.js"></script>
+        <script src="js/textarea.js"></script>
         
     </body>
 </html>
